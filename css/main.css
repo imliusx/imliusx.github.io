@@ -1800,9 +1800,6 @@ pre .javascript .function {
   opacity: 1;
 }
 .site-author-image {
-  border-radius: 100%;
-}
-.site-author-image {
   transition: transform 1s ease-out;
 }
 .site-author-image:hover {
@@ -1841,7 +1838,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #81b6ff;
+  background: #dd61ad;
 }
 .feed-link,
 .chat {
