@@ -944,6 +944,13 @@ Java语言发展史SUN(Stanford University Network，斯坦福大学网络公司
     visitor: false,
     lang: 'zh-cn' || 'zh-cn'
   });
+
+  var infoEle = document.querySelector('#comments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item) {
+    item.parentNode.removeChild(item);
+    });
+  }
 </script>
 
 
