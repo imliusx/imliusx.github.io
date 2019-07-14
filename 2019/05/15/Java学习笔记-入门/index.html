@@ -105,7 +105,7 @@
 <meta property="og:description" content="Java语言发展史SUN(Stanford University Network，斯坦福大学网络公司)  1990年末，Sun公司启动由James Gosling领导的“Green计划”，旨在开发智能家电的嵌入式控制系统 1991年2月，Green项目小组成员发现C++存在很多弊端，决定在其基础上开发一种新的语言，并命名为“Oak” 1991年6月，JamesGosling开发了Oak的解释器">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g35dpimkwdj307q051glf.jpg">
-<meta property="og:updated_time" content="2019-06-03T08:01:17.153Z">
+<meta property="og:updated_time" content="2019-07-14T08:14:39.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习笔记-入门">
 <meta name="twitter:description" content="Java语言发展史SUN(Stanford University Network，斯坦福大学网络公司)  1990年末，Sun公司启动由James Gosling领导的“Green计划”，旨在开发智能家电的嵌入式控制系统 1991年2月，Green项目小组成员发现C++存在很多弊端，决定在其基础上开发一种新的语言，并命名为“Oak” 1991年6月，JamesGosling开发了Oak的解释器">
@@ -434,7 +434,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-03 16:01:17" itemprop="dateModified" datetime="2019-06-03T16:01:17+08:00">2019-06-03</time>
+                <time title="修改时间：2019-07-14 16:14:39" itemprop="dateModified" datetime="2019-07-14T16:14:39+08:00">2019-07-14</time>
               
             
           </span>
@@ -498,7 +498,7 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                <span title="本文字数">2.4k</span>
+                <span title="本文字数">3.7k</span>
               
 
               
@@ -510,7 +510,7 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -613,6 +613,118 @@
 <li>JDK : JRE + JAVA开发工具。</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<h3 id="Java语言约定俗称的的书写格式"><a href="#Java语言约定俗称的的书写格式" class="headerlink" title="Java语言约定俗称的的书写格式"></a>Java语言约定俗称的的书写格式</h3><ul>
+<li>大括号要对齐, 而且成对写</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>左大括号前面要有空格</li>
+<li>方法和程序块之间加空行让程序看起来更加清晰</li>
+<li>并排语句之间加空格, 如for语句</li>
+<li>运算符两侧加空格</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ ) &#123;</span><br><span class="line">	System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="path环境变量的配置"><a href="#path环境变量的配置" class="headerlink" title="path环境变量的配置"></a>path环境变量的配置</h3><ul>
+<li>path 值为<code>JDK安装路径/bin</code></li>
+<li>classpath 值为 <code>.;JRE安装路径/lib</code></li>
+<li>path和classpath的区别<ul>
+<li>path配置的是可执行文件<code>.exe</code>, 配置后可以在不同的盘符下访问path路径下的可执行文件</li>
+<li>classpath配置的java的类文件, 就是<code>.class</code>文件</li>
+</ul>
+</li>
+<li>配置classpath加上分号和不加分号的区别<ul>
+<li>如果不加分号只去classpath路径找</li>
+<li>如果加上分号,先去classpath找,然后在当前路径找</li>
+</ul>
+</li>
+</ul>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>编写程序时, 总需要为程序添加一些注释, 用以说明某段代码的作用, 或者说说明某个类的用途, 某个方法的功能, 以及该方法的参数和返回值的数据类型的意义.</p>
+<ul>
+<li><p>为什么要添加注释</p>
+<ul>
+<li>永远不要过于相信自己的理解力! 当你思路畅通, 进入编程境界时, 你可以很流畅的实现某个功能. 但这种流畅是因为你正处于开发的思路中, 为了再次阅读这段代码很流畅, 还可能找回当初编写这段代码的思路, 建议添加注释.</li>
+<li>可读性第一!效率第二!</li>
+<li>代码即文档!</li>
+</ul>
+</li>
+<li><p>注释的分类</p>
+<ul>
+<li><p>单行注释</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单行注释</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行注释</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p>文档注释</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 文档注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><ul>
+<li><p>什么是关键字</p>
+<ul>
+<li>被Java赋予特定含义的的单词</li>
+</ul>
+</li>
+<li><p>关键字的特点</p>
+<ul>
+<li>组成关键字的字母全部小写</li>
+</ul>
+</li>
+<li><p>常见的关键字</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="class"><span class="keyword">class</span> ...</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关键字注意事项</p>
+<ul>
+<li><code>goto</code>和<code>const</code>作为保留字存在, 目前并不使用</li>
+<li>许多软件对关键字有特殊颜色的标记高亮</li>
+</ul>
+</li>
+</ul>
+<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
+<li>什么是标识符<ul>
+<li>就是给类,接口,方法等其名字时使用的字符序列</li>
+</ul>
+</li>
+<li>标识符的组成规则<ul>
+<li>英文大小写字母</li>
+<li>数字字符</li>
+<li><code>$</code>和<code>_</code></li>
+</ul>
+</li>
+<li>标识符注意事项<ul>
+<li>不能使用关键字</li>
+<li>不能以数字开头</li>
+</ul>
+</li>
+</ul>
+<h3 id="标识符中常见的命名规则"><a href="#标识符中常见的命名规则" class="headerlink" title="标识符中常见的命名规则"></a>标识符中常见的命名规则</h3><ul>
+<li><p>见名知意</p>
+</li>
+<li><p>包</p>
+<ul>
+<li><p>最好是域名倒过来写, 要求所有字母小写</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">com.company.name</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>类或者接口</p>
+<ul>
+<li>如果是一个单词, 则首字母大写如<code>Person</code> <code>Demo</code> <code>Student</code></li>
+<li>如果是多个单词,每个单词首字母大写(驼峰标识)如<code>JavaTest</code></li>
+</ul>
+</li>
+<li>方法或者变量<ul>
+<li>如果是一个单词,则全部小写如<code>age</code> <code>name</code> </li>
+<li>如果是多个单词, 从第二个单词首字母大写如<code>studentName</code> </li>
+</ul>
+</li>
+<li>常量<ul>
+<li>如果是一个单词,则全部字母大写如<code>NUM</code></li>
+<li>如果是多个单词,则所有单词大写,用下划线划分每个单词如<code>MAX_NUM</code></li>
 </ul>
 </li>
 </ul>
@@ -854,7 +966,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言发展史"><span class="nav-number">1.</span> <span class="nav-text">Java语言发展史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言版本"><span class="nav-number">2.</span> <span class="nav-text">Java语言版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言平台"><span class="nav-number">3.</span> <span class="nav-text">Java语言平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言的特点"><span class="nav-number">4.</span> <span class="nav-text">Java语言的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK和JRE"><span class="nav-number">5.</span> <span class="nav-text">JDK和JRE</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言发展史"><span class="nav-number">1.</span> <span class="nav-text">Java语言发展史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言版本"><span class="nav-number">2.</span> <span class="nav-text">Java语言版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言平台"><span class="nav-number">3.</span> <span class="nav-text">Java语言平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言的特点"><span class="nav-number">4.</span> <span class="nav-text">Java语言的特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK和JRE"><span class="nav-number">5.</span> <span class="nav-text">JDK和JRE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java语言约定俗称的的书写格式"><span class="nav-number">6.</span> <span class="nav-text">Java语言约定俗称的的书写格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#path环境变量的配置"><span class="nav-number">7.</span> <span class="nav-text">path环境变量的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">8.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关键字"><span class="nav-number">9.</span> <span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符"><span class="nav-number">10.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符中常见的命名规则"><span class="nav-number">11.</span> <span class="nav-text">标识符中常见的命名规则</span></a></li></ol></div>
             
 
           </div>
@@ -894,7 +1006,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">8k</span>
+    <span title="站点总字数">9k</span>
   
 
   
@@ -903,7 +1015,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
   
 </div>
 
