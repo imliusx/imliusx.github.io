@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="长安のブログ">
 <meta property="og:description" content="Java 开发工具常见开发工具介绍 操作系统自带的记事本软件 高级记事本软件 EditPlus TextPad NotePad++   集成开发环境 IDE(Integrated Development Environment) Eclipse Idea   Eclipse和MyEclipse的区别 Eclipse是一种可扩展的开放源代码的IDE。 Eclipse的特点描述 免费 纯Java语言编">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-27T07:37:52.583Z">
+<meta property="og:updated_time" content="2019-07-27T08:56:59.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习笔记-11">
 <meta name="twitter:description" content="Java 开发工具常见开发工具介绍 操作系统自带的记事本软件 高级记事本软件 EditPlus TextPad NotePad++   集成开发环境 IDE(Integrated Development Environment) Eclipse Idea   Eclipse和MyEclipse的区别 Eclipse是一种可扩展的开放源代码的IDE。 Eclipse的特点描述 免费 纯Java语言编">
@@ -415,7 +415,7 @@
                 
               
 
-              <time title="创建时间：2019-07-27 15:36:40 / 修改时间：15:37:52" itemprop="dateCreated datePublished" datetime="2019-07-27T15:36:40+08:00">2019-07-27</time>
+              <time title="创建时间：2019-07-27 15:36:40 / 修改时间：16:56:59" itemprop="dateCreated datePublished" datetime="2019-07-27T15:36:40+08:00">2019-07-27</time>
             
 
             
@@ -525,7 +525,7 @@
 </ul>
 </li>
 <li>集成开发环境 IDE(Integrated Development Environment)<ul>
-<li>Eclipse</li>
+<li><strong>Eclipse</strong></li>
 <li>Idea</li>
 </ul>
 </li>
@@ -547,10 +547,11 @@
 </li>
 </ul>
 <h3 id="Eclipse的下载安装及卸载"><a href="#Eclipse的下载安装及卸载" class="headerlink" title="Eclipse的下载安装及卸载"></a>Eclipse的下载安装及卸载</h3><ul>
-<li>下载 <a href="http://eclipse.org/" target="_blank" rel="noopener"></a></li>
+<li>下载</li>
+<li><a href="https://www.eclipse.org/" target="_blank" rel="noopener">eclipse官方网站</a></li>
 <li>安装<ul>
 <li>绿色版    解压就可以使用(Eclipse)</li>
-<li>安装版   双击运行,一路next即可(JDK)</li>
+<li>安装版   双击运行,一路<code>next</code>即可(JDK)</li>
 </ul>
 </li>
 <li>卸载<ul>
@@ -564,7 +565,7 @@
 <li>工作空间  其实就是我们写的源代码所在的目录</li>
 </ul>
 </li>
-<li>用Eclipse来完成一个HelloWorld案例<ul>
+<li>用Eclipse来完成一个<code>HelloWorld</code>案例<ul>
 <li>代码以项目为基本单位</li>
 <li>创建项目</li>
 <li>创建包</li>
@@ -586,10 +587,10 @@
 </ul>
 <h3 id="Eclipse的视窗和视图概述"><a href="#Eclipse的视窗和视图概述" class="headerlink" title="Eclipse的视窗和视图概述"></a>Eclipse的视窗和视图概述</h3><ul>
 <li>视窗  每一个基本的窗体被称为视窗<ul>
-<li>PackageExplorer  显示项目结构，包，类，及资源</li>
-<li>Outline   显示类的结构，方便查找，识别，修改</li>
-<li>Console  程序运行的结果在该窗口显示</li>
-<li>Hierarchy 显示Java继承层次结构，选中类后F4</li>
+<li><code>PackageExplorer</code>  显示项目结构，包，类，及资源</li>
+<li><code>Outline</code>   显示类的结构，方便查找，识别，修改</li>
+<li><code>Console</code> 程序运行的结果在该窗口显示</li>
+<li><code>Hierarchy</code> 显示Java继承层次结构，选中类后F4</li>
 </ul>
 </li>
 <li>视图  是由某些视窗的组合而成的<ul>
@@ -600,7 +601,7 @@
 </ul>
 <h3 id="Eclipse工作空间的基本配置"><a href="#Eclipse工作空间的基本配置" class="headerlink" title="Eclipse工作空间的基本配置"></a>Eclipse工作空间的基本配置</h3><ul>
 <li>程序的编译和运行的环境配置(一般不改)<ul>
-<li>window – Preferences – Java<br>   编译环境：Compiler    默认选中的就是最高版本。<br>   运行环境：Installed JREs    默认会找你安装的那个JDK。建议配置了Java的环境变量。</li>
+<li><code>window</code> – <code>Preferences</code> – <code>Java</code><br>   编译环境：<code>Compiler</code>    默认选中的就是最高版本。<br>   运行环境：<code>Installed JREs</code>    默认会找你安装的那个JDK。建议配置了Java的环境变量。</li>
 <li>问题：<ul>
 <li>低编译，高运行。可以。</li>
 <li>高编译，低运行。不可以。</li>
@@ -610,60 +611,60 @@
 </ul>
 </li>
 <li>如何去掉默认注释?<ul>
-<li>window – Preferences – Java – Code Style – Code Templates</li>
-<li>选择你不想要的内容，通过右边Edit编辑。</li>
+<li><code>window</code> – <code>Preferences</code> – <code>Java</code> – <code>Code Style</code> – <code>Code Templates</code></li>
+<li>选择你不想要的内容，通过右边<code>Edit</code>编辑。</li>
 <li>注意：请只删除注释部分，不是注释部分的不要删除。</li>
 </ul>
 </li>
 <li>行号的显示和隐藏<ul>
-<li>显示：在代码区域的最左边的空白区域，右键 – Show Line Numbers即可。</li>
+<li>显示：在代码区域的最左边的空白区域，右键 – <code>Show Line Numbers</code>即可。</li>
 <li>隐藏：把上面的动作再做一次。</li>
 </ul>
 </li>
 <li>字体大小及颜色<ul>
 <li>Java代码区域的字体大小和颜色：<ul>
-<li>window – Preferences – General – Appearance – Colors And Fonts –Java修改 – Java Edit Text Font</li>
+<li><code>window</code> – <code>Preferences</code> – <code>General</code> – <code>Appearance</code>– <code>Colors And Fonts</code> –<code>Java修改</code> – <code>Java Edit Text Font</code></li>
 </ul>
 </li>
 <li>控制台<ul>
-<li>window – Preferences – General – Appearance – Colors And Fonts – Debug – Console font</li>
+<li><code>window</code> – <code>Preferences</code> – <code>General</code> – <code>Appearance</code>– <code>Colors And Fonts</code> – <code>Debug</code>–<code>Console font</code></li>
 </ul>
 </li>
 <li>其他文件<ul>
-<li>window – Preferences – General – Appearance – Colors And Fonts – Basic – Text Font</li>
+<li><code>window</code> – <code>Preferences</code> – <code>General</code> – <code>Appearance</code> – <code>Colors And Fonts</code> – <code>Basic</code> – <code>Text Font</code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>窗体给弄乱了，怎么办?<ul>
-<li>window – Reset Perspective</li>
+<li><code>window</code> – <code>Reset Perspective</code></li>
 </ul>
 </li>
 <li>控制台找不到了，怎么办?<ul>
-<li>Window–Show View—Console</li>
+<li><code>Window</code>–<code>Show View</code>—<code>Console</code></li>
 </ul>
 </li>
 </ul>
 <h3 id="Eclipse中内容辅助键的使用"><a href="#Eclipse中内容辅助键的使用" class="headerlink" title="Eclipse中内容辅助键的使用"></a>Eclipse中内容辅助键的使用</h3><ul>
-<li>A:Alt+/ 起提示作用</li>
-<li>B:main+alt+/,syso+alt+/,给出其他提示</li>
+<li><code>Alt</code>+<code>/</code> 起提示作用</li>
+<li><code>main</code>+<code>alt</code>+<code>/</code>,<code>syso</code>+<code>alt</code>+<code>/</code>,给出其他提示</li>
 </ul>
 <h3 id="Eclipse中快捷键的使用"><a href="#Eclipse中快捷键的使用" class="headerlink" title="Eclipse中快捷键的使用"></a>Eclipse中快捷键的使用</h3><ul>
-<li>格式化  ctrl+shift+f</li>
-<li>导入包  ctrl+shift+o </li>
-<li>注释  ctrl+/,ctrl+shift+/,ctrl+shift+\</li>
-<li>代码上下移动 选中代码alt+上/下箭头</li>
-<li>查看源码  选中类名(F3或者Ctrl+鼠标点击)</li>
-<li>给建议 ctrl+1</li>
-<li>查找具体的类 ctrl + shift + t</li>
-<li>创建新的类或者接口 ctrl + n</li>
-<li>alt + shift + m 抽取方法</li>
-<li>alt + shift + r 改名</li>
+<li>格式化 <code>ctrl</code>+<code>shift</code>+<code>f</code></li>
+<li>导入包  <code>ctrl</code>+<code>shift</code>+<code>o</code> </li>
+<li>注释  <code>ctrl</code>+<code>/</code>,<code>ctrl</code>+<code>shift</code>+<code>/</code>,<code>ctrl</code>+<code>shift</code>+<code>\</code></li>
+<li>代码上下移动 选中代码<code>alt</code>+<code>上</code>/<code>下</code>箭头</li>
+<li>查看源码  选中类名(<code>F3</code>或者<code>Ctrl</code>+<code>鼠标点击</code>)</li>
+<li>给建议 <code>ctrl</code>+<code>1</code></li>
+<li>查找具体的类 <code>ctrl</code> + <code>shift</code> +<code>t</code></li>
+<li>创建新的类或者接口 <code>ctrl</code> + <code>n</code></li>
+<li><code>alt</code> + <code>shift</code> + <code>m</code>抽取方法</li>
+<li><code>alt</code> + <code>shift</code>+<code>r</code> 改名</li>
 </ul>
 <h3 id="Eclipse中如何提高开发效率"><a href="#Eclipse中如何提高开发效率" class="headerlink" title="Eclipse中如何提高开发效率"></a>Eclipse中如何提高开发效率</h3><ul>
-<li>alt + shift + s</li>
+<li><code>alt</code>+ <code>shift</code>+ <code>s</code></li>
 <li>自动生成构造方法</li>
-<li>自动生成get/set方法</li>
+<li>自动生成<code>get/set</code>方法</li>
 <li>Eclipse中继承抽象类或者实现接口的简化</li>
 </ul>
 <h3 id="Eclipse中一个标准学生类及其测试"><a href="#Eclipse中一个标准学生类及其测试" class="headerlink" title="Eclipse中一个标准学生类及其测试"></a>Eclipse中一个标准学生类及其测试</h3><ul>
@@ -680,7 +681,7 @@
 </ul>
 <h3 id="Eclipse中如何生成jar包并导入到项目中"><a href="#Eclipse中如何生成jar包并导入到项目中" class="headerlink" title="Eclipse中如何生成jar包并导入到项目中"></a>Eclipse中如何生成jar包并导入到项目中</h3><ul>
 <li>jar是什么?<ul>
-<li>jar是多个class文件的压缩包。</li>
+<li>jar是多个<code>class</code>文件的压缩包。</li>
 </ul>
 </li>
 <li>jar有什么用?<ul>
@@ -688,7 +689,7 @@
 </ul>
 </li>
 <li>打jar包<ul>
-<li>选中项目–右键–Export–Java–Jar–自己指定一个路径和一个名称–Finish</li>
+<li><code>选中项目</code>–<code>右键</code>–<code>Export</code>–<code>Java</code>–<code>Jar</code>–<code>自己指定一个路径和一个名称</code>–<code>Finish</code></li>
 </ul>
 </li>
 <li>导入jar包<ul>
@@ -702,14 +703,14 @@
 </ul>
 </li>
 <li>生成帮助文档<ul>
-<li>选中项目–右键–Export–Java–Javadoc—Finish</li>
+<li><code>选中项目</code>–<code>右键</code>–<code>Export</code>–<code>Java</code>–<code>Javadoc</code>—<code>Finish</code></li>
 </ul>
 </li>
 <li>使用jar包</li>
 </ul>
 <h3 id="Eclipse中如何删除项目和导入项目"><a href="#Eclipse中如何删除项目和导入项目" class="headerlink" title="Eclipse中如何删除项目和导入项目"></a>Eclipse中如何删除项目和导入项目</h3><ul>
 <li>删除项目<ul>
-<li>选中项目 – 右键 – 删除<ul>
+<li><code>选中项目</code> – <code>右键</code>– <code>删除</code><ul>
 <li>从项目区域中删除</li>
 <li>从硬盘上删除</li>
 </ul>
@@ -717,10 +718,10 @@
 </ul>
 </li>
 <li>导入项目<ul>
-<li>在项目区域右键找到import</li>
-<li>找到General，展开，并找到</li>
-<li>Existing Projects into Workspace</li>
-<li>点击next,然后选择你要导入的项目</li>
+<li>在项目区域右键找到<code>import</code></li>
+<li>找到<code>General</code>，展开，并找到</li>
+<li><code>Existing Projects into Workspace</code></li>
+<li>点击<code>next</code>,然后选择你要导入的项目</li>
 <li>注意：这里选择的是项目名称</li>
 </ul>
 </li>
@@ -731,7 +732,8 @@
 <li>查看程序执行流程</li>
 </ul>
 </li>
-<li>如何查看程序执行流程<ul>
+<li><p>如何查看程序执行流程</p>
+<ul>
 <li>什么是断点</li>
 <li>如何设置断点</li>
 <li>在哪里设置断点</li>
@@ -740,10 +742,13 @@
 <li>如何去除断点<h3 id="Eclipse查看Java中参数传递问题"><a href="#Eclipse查看Java中参数传递问题" class="headerlink" title="Eclipse查看Java中参数传递问题"></a>Eclipse查看Java中参数传递问题</h3></li>
 </ul>
 </li>
-<li>断点演示<ul>
-<li>断点查看Java中参数传递问题<h2 id="常见对象"><a href="#常见对象" class="headerlink" title="常见对象"></a>常见对象</h2><h3 id="API概述"><a href="#API概述" class="headerlink" title="API概述"></a>API概述</h3></li>
+<li><p>断点演示</p>
+<ul>
+<li>断点查看Java中参数传递问题<h2 id="常见对象"><a href="#常见对象" class="headerlink" title="常见对象"></a>常见对象</h2></li>
 </ul>
 </li>
+</ul>
+<h3 id="API概述"><a href="#API概述" class="headerlink" title="API概述"></a>API概述</h3><ul>
 <li>API(Application Programming Interface) <ul>
 <li>应用程序编程接口</li>
 </ul>
@@ -754,24 +759,24 @@
 </ul>
 </li>
 </ul>
-<h3 id="Object类的概述"><a href="#Object类的概述" class="headerlink" title="Object类的概述"></a>Object类的概述</h3><ul>
-<li>Object类概述<ul>
+<h3 id="Object类的概述"><a href="#Object类的概述" class="headerlink" title="Object类的概述"></a><code>Object</code>类的概述</h3><ul>
+<li><code>Object</code>类概述<ul>
 <li>类层次结构的根类</li>
 <li>所有类都直接或者间接的继承自该类</li>
 </ul>
 </li>
 <li>构造方法<ul>
-<li>public Object()</li>
+<li><code>public Object()</code></li>
 <li>回想面向对象中为什么说：</li>
 <li>子类的构造方法默认访问的是父类的无参构造方法</li>
 </ul>
 </li>
 </ul>
-<h3 id="Object类的hashCode-方法"><a href="#Object类的hashCode-方法" class="headerlink" title="Object类的hashCode()方法"></a>Object类的hashCode()方法</h3><ul>
+<h3 id="Object类的hashCode-方法"><a href="#Object类的hashCode-方法" class="headerlink" title="Object类的hashCode()方法"></a>Object类的<code>hashCode()</code>方法</h3><ul>
 <li>案例演示<ul>
-<li>public int hashCode()</li>
+<li><code>public int hashCode()</code></li>
 <li>返回该对象的哈希码值。默认情况下，该方法会根据对象的地址来计算。</li>
-<li>不同对象的，hashCode()一般来说不会相同。但是，同一个对象的hashCode()值肯定相同。</li>
+<li>不同对象的，<code>hashCode()</code>一般来说不会相同。但是，同一个对象的<code>hashCode()</code>值肯定相同。</li>
 <li>不是对象的实际地址值，可以理解为逻辑地址值。<ul>
 <li>举例：物体和编号。    </li>
 </ul>
@@ -779,28 +784,27 @@
 </ul>
 </li>
 </ul>
-<h3 id="Object类的getClass-方法"><a href="#Object类的getClass-方法" class="headerlink" title="Object类的getClass()方法"></a>Object类的getClass()方法</h3><ul>
+<h3 id="Object类的getClass-方法"><a href="#Object类的getClass-方法" class="headerlink" title="Object类的getClass()方法"></a><code>Object</code>类的<code>getClass()</code>方法</h3><ul>
 <li>案例演示<ul>
-<li>public final Class getClass()</li>
-<li>返回此 Object 的运行时类。<br>   可以通过Class类中的一个方法，获取对象的真实类的全名称。    <ul>
-<li>public String getName()</li>
+<li><code>public final Class getClass()</code></li>
+<li>返回此 <code>Object</code> 的运行时类。<br> 可以通过<code>Class</code>类中的一个方法，获取对象的真实类的全名称。    <ul>
+<li><code>public String getName()</code></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="Object类的toString-方法"><a href="#Object类的toString-方法" class="headerlink" title="Object类的toString()方法"></a>Object类的toString()方法</h3><ul>
-<li>案例演示<ul>
-<li>public String toString()</li>
-<li>返回该对象的字符串表示。</li>
-</ul>
+<h3 id="Object类的toString-方法"><a href="#Object类的toString-方法" class="headerlink" title="Object类的toString()方法"></a><code>Object</code>类的<code>toString()</code>方法</h3><ul>
+<li><p>案例演示</p>
+<ul>
+<li><p><code>public String toString()</code></p>
 </li>
-<li>  ​    <pre><code>public Stirng toString() {
-    return name + &quot;,&quot; + age;
-}
-</code></pre><ul>
-<li>它的值等于： <ul>
-<li>getClass().getName() + ‘@’ + Integer.toHexString(hashCode()) </li>
+<li><p>返回该对象的字符串表示。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Stirng <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> name + <span class="string">","</span> + age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>它的值等于： </p>
+<ul>
+<li><code>getClass().getName() + &#39;@&#39; + Integer.toHexString(hashCode())</code></li>
 </ul>
 </li>
 <li>由于默认情况下的数据对我们来说没有意义，一般建议重写该方法。</li>
@@ -811,18 +815,18 @@
 </ul>
 </li>
 </ul>
-<h3 id="Object类的equals-方法"><a href="#Object类的equals-方法" class="headerlink" title="Object类的equals()方法"></a>Object类的equals()方法</h3><ul>
+<h3 id="Object类的equals-方法"><a href="#Object类的equals-方法" class="headerlink" title="Object类的equals()方法"></a><code>Object</code>类的<code>equals()</code>方法</h3><ul>
 <li>案例演示<ul>
 <li>指示其他某个对象是否与此对象“相等”。 </li>
 <li>默认情况下比较的是对象的引用是否相同。</li>
 <li>由于比较对象的引用没有意义，一般建议重写该方法。</li>
-<li>==和equals()的区别。(面试题)</li>
+<li><code>==</code>和<code>equals()</code>的区别。(面试题)</li>
 </ul>
 </li>
 </ul>
-<h3 id="号和equals方法的区别"><a href="#号和equals方法的区别" class="headerlink" title="==号和equals方法的区别"></a>==号和equals方法的区别</h3><ul>
-<li>==是一个比较运算符号,既可以比较基本数据类型,也可以比较引用数据类型,基本数据类型比较的是值,引用数据类型比较的是地址值</li>
-<li>equals方法是一个方法,只能比较引用数据类型,所有的对象都会继承Object类中的方法,如果没有重写Object类中的equals方法,equals方法和==号比较引用数据类型无区别,重写后的equals方法比较的是对象中的属性</li>
+<h3 id="号和equals方法的区别"><a href="#号和equals方法的区别" class="headerlink" title="==号和equals方法的区别"></a><code>==</code>号和<code>equals</code>方法的区别</h3><ul>
+<li><code>==</code>是一个比较运算符号,既可以比较基本数据类型,也可以比较引用数据类型,基本数据类型比较的是值,引用数据类型比较的是地址值</li>
+<li><code>equals</code>方法是一个方法,只能比较引用数据类型,所有的对象都会继承<code>Object</code>类中的方法,如果没有重写<code>Object</code>类中的<code>equals</code>方法,<code>equals</code>方法和==号比较引用数据类型无区别,重写后的<code>equals</code>方法比较的是对象中的属性</li>
 </ul>
 
       
